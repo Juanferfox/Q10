@@ -1,0 +1,748 @@
+@media (max-width: 1200px) {
+
+    .container-img .img-hero {
+        right: 21px;
+    }
+
+    .nav-left .enlaces-menu .nav-item {
+        margin-right: 15px;
+    }
+
+    .nav-left .enlaces-menu {
+        padding: 20px 45px;
+    }
+
+    .conversation-1 {
+        width: 200px;
+    }
+
+    .conversation-2 {
+        width: 150px;
+        left: 50px;
+    }
+
+    .conversation-1::after {
+        border-right: 10px solid transparent;
+        border-top: 10px solid transparent;
+        border-left: 10px solid #e5fad9;
+        border-bottom: 10px solid #e5fad9;
+    }
+
+    .conversation-2::after {
+        border-right: 10px solid transparent;
+        border-top: 10px solid transparent;
+        border-left: 10px solid #fff;
+        border-bottom: 10px solid #fff;
+    }
+
+    .conversation-1 p,
+    .conversation-2 p {
+        font-size: 1.5rem;
+    }
+
+    .typing {
+        top: 450px;
+    }
+
+    #input {
+        height: 60px;
+        font-size: 1.3rem;
+    }
+
+    .hero .input-group .btn {
+        font-size: 1.3rem;
+    }
+
+    .container-tabs {
+        height: auto;
+    }
+
+    .container-tabs p {
+        font-size: 1.3rem;
+        height: 200px;
+        padding: 0;
+        margin: 0;
+    }
+
+    #pills-profile img {
+        top: 0;
+    }
+
+    .pills-container {
+        padding: 0;
+    }
+
+    .input-foot {
+        gap: 35px;
+    }
+
+    .terms {
+        gap: 50px;
+    }
+
+    .comments .text {
+        width: 100%;
+    }
+
+}
+
+
+/* Tablet */
+@media(max-width: 768px) {
+
+    .hamburguer {
+        display: block;
+        position: absolute;
+        top: 25px;
+        right: 20px;
+
+    }
+
+    nav .nav-desktop {
+        display: none;
+    }
+
+    nav .nav-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 25px 0;
+    }
+
+    .logo-m {
+        padding-left: 25px;
+    }
+
+    .enlaces-menu2 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 92vh;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: none;
+        opacity: 0;
+    }
+
+    .enlaces-menu2 li {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+
+    @keyframes muestraMenu {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .enlaces-menu2.activado {
+        display: flex;
+        animation: muestraMenu 350ms ease-in-out both;
+    }
+
+    .hero-container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        max-height: initial;
+    }
+
+    .container-content {
+        width: 100%;
+        padding: 0;
+    }
+
+    .container-content p {
+        width: 100%;
+    }
+
+    .container-img {
+        width: 100%;
+        padding-bottom: 100px;
+    }
+
+    .container-img .img-hero {
+        position: relative;
+        top: 0;
+        right: -214px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .conversation-1 {
+        width: 300px;
+        left: 50px;
+        font-size: 1.7rem;
+    }
+
+    .conversation-1 p,
+    .conversation-2 p {
+        font-size: 1.7rem;
+    }
+
+    .conversation-1::after {
+        border-right: 15px solid transparent;
+        border-top: 15px solid transparent;
+        border-left: 15px solid #e5fad9;
+        border-bottom: 15px solid #e5fad9;
+    }
+
+    .conversation-2 {
+        width: 200px;
+        left: 150px;
+        top: 300px;
+
+    }
+
+    .conversation-2::after {
+        border-right: 15px solid transparent;
+        border-top: 15px solid transparent;
+        border-left: 15px solid white;
+        border-bottom: 15px solid white;
+        left: -15px;
+    }
+
+    .typing {
+        left: 55px;
+        top: 425px;
+    }
+
+    #input-container {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    .cont {
+        position: relative;
+        z-index: 1;
+    }
+
+    .brands-section {
+        display: none;
+    }
+
+    .cards-container {
+        flex-wrap: wrap;
+        background-color: white;
+        padding: 30px 50px;
+    }
+
+    .cards {
+        box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.13);
+    }
+
+    .cards::after {
+        right: -17px;
+        z-index: 0;
+    }
+
+    .container-dates {
+        display: none;
+    }
+
+    .nav-pills .nav-link {
+        width: 138px;
+        font-size: 1.5rem;
+    }
+
+    .pills-container h2 {
+        font-size: 3.0rem;
+    }
+
+    .comments h3 {
+        font-size: 2.0rem;
+    }
+
+    .comments .text {
+        font-size: 3.0rem;
+    }
+
+    .comments::after {
+        height: 450px;
+        width: 447px;
+    }
+
+    .ultimate-input h2 {
+        font-size: 3rem;
+    }
+
+    #input-2 {
+        height: 80px;
+        font-size: 1.5rem;
+    }
+
+    .ultimate-input .btn {
+        font-size: 1.5rem;
+        width: 30%;
+    }
+
+    footer {
+        padding-top: 49px;
+    }
+
+    .container-foot {
+        align-items: flex-start;
+        padding-bottom: 49px;
+    }
+
+    .ul-container {
+        gap: 5px;
+        padding: 10px 0;
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    .container-foot ul {
+        margin: 0;
+        padding: 0;
+        display: block;
+        align-items: center;
+        width: 35%;
+    }
+
+    .fot-1 {
+        justify-content: flex-start;
+        margin-right: 20px;
+    }
+
+    #input-3-container {
+        width: 325px;
+    }
+
+    .input-foot .btn {
+        width: 100px;
+        font-size: 1.3rem;
+    }
+
+    .lenguage {
+        padding-top: 40px;
+    }
+
+    .lenguages {
+        flex-direction: column;
+    }
+
+    .social {
+        flex-wrap: wrap;
+        width: 133px;
+        gap: 16px;
+    }
+
+    .social a {
+        width: 28%;
+    }
+
+    .container-exponsore a {
+        width: calc(50% - 18px);
+    }
+
+    .container-exponsore a img {
+        object-fit: scale-down;
+        width: 100%;
+        height: 100%;
+        object-position: center;
+    }
+}
+
+
+/* Mobile */
+@media(max-width:576px) {
+    .li-text {
+        display: none;
+    }
+
+    .hero {
+        padding: 20px;
+        padding-bottom: 100px;
+    }
+
+    #input-container {
+        width: 100%;
+    }
+
+    .hero .input-group .btn {
+        font-size: 1.5rem;
+    }
+
+    .container-content h1 {
+        font-size: 3rem;
+        line-height: 38px;
+        font-weight: 400;
+    }
+
+    .container-content h1 span {
+        font-weight: 700;
+    }
+
+
+    .container-content p {
+        width: 100%;
+        margin-bottom: 0;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+
+    .container-img {
+        right: -20px;
+    }
+
+    .container-img .img-hero {
+        height: 266px;
+        right: -102px;
+    }
+
+    .conversation-1 {
+        width: 161px;
+        left: 12px;
+        top: 58px;
+        box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+        padding: 14px 16px 4px;
+    }
+
+    .conversation-1 p,
+    .conversation-2 p {
+        font-size: 1rem;
+        margin-bottom: 3px;
+    }
+
+    .conversation-1::after {
+        border-right: 8px solid transparent;
+        border-top: 8px solid transparent;
+        border-left: 8px solid #e5fad9;
+        border-bottom: 8px solid #e5fad9;
+    }
+
+    .conversation-2::after {
+        border-right: 8px solid transparent;
+        border-top: 8px solid transparent;
+        border-left: 8px solid white;
+        border-bottom: 8px solid white;
+        left: -8px;
+    }
+
+    .conversation-2 {
+        width: 120px;
+        left: 54px;
+        top: 143px;
+        padding: 14px 16px 4px;
+    }
+
+    .conversation-1 .check,
+    .conversation-2 .check {
+        font-size: 0.8rem;
+        height: 11px;
+        padding: 0;
+        line-height: 1;
+    }
+
+    .typing {
+        width: 42px;
+        height: 23px;
+        border-radius: 4px;
+        left: 15px;
+        top: 218px;
+    }
+
+    .typing .dot {
+        width: 7px;
+        height: 7px;
+        margin: 0 2px;
+    }
+
+    .typing::after {
+        left: 38px;
+        border-right: 5px solid transparent;
+        border-top: 5px solid transparent;
+        border-left: 5px solid var(--secundary-color);
+        border-bottom: 5px solid var(--secundary-color);
+    }
+
+    #input {
+        height: 50px;
+    }
+
+    .hero .input-group .btn {
+        bottom: 0;
+        right: 0;
+        top: 110px;
+        height: 50px;
+        width: 100%;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        padding-bottom: 80px;
+    }
+
+    .content-card {
+        width: 92%;
+    }
+
+    .cards h2 {
+        font-size: 3.5rem;
+    }
+
+    .cards h4 {
+        font-size: 1.6rem;
+        line-height: 24px;
+    }
+
+    .cards p {
+        font-size: 1.1rem;
+        line-height: 16px;
+    }
+
+    .cards {
+        min-height: 193px;
+    }
+
+    .container-tabs {
+        width: 100%;
+        background-color: white;
+        padding: 18px
+    }
+
+    .container-tabs h3 {
+        font-size: 2.4rem;
+    }
+
+    .pills-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        padding-bottom: 40px;
+    }
+
+    .pills-container h2 {
+        font-size: 3.0rem;
+        line-height: 1;
+        order: 1;
+        margin-bottom: 15px;
+    }
+
+    .container-tabs p {
+        font-size: 1.5rem;
+        height: auto;
+        line-height: 25px;
+        padding: 0;
+        margin: 30px 0 30px 0;
+        order: 3;
+    }
+
+    .pills-container a {
+        order: 4;
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    #pills-home img {
+        width: 100%;
+        position: relative;
+        order: 2;
+        right: -28px;
+    }
+
+    #pills-profile img {
+        width: 100%;
+        position: relative;
+        order: 2;
+        right: -25px;
+    }
+
+    #pills-contact img {
+        width: 100%;
+        position: relative;
+        order: 2;
+        right: -18px;
+    }
+
+    .container-tabs li {
+        margin: 0;
+        width: 33%;
+    }
+
+    .container-tabs li:nth-child(2) .nav-link {
+        border-radius: 50px 0 0 50px;
+        border-right: 0;
+    }
+
+    .container-tabs li:nth-child(3) .nav-link {
+        border-radius: 0;
+    }
+
+    .container-tabs li:nth-child(4) .nav-link {
+        border-radius: 0 50px 50px 0;
+        border-left: 0;
+    }
+
+    .nav-pills .nav-link {
+        width: 100%;
+        padding: 8px 0;
+        font-size: 1.3rem;
+    }
+
+    .mb-3 {
+        justify-content: center;
+    }
+
+    .comments {
+        padding: 38px 31px;
+        padding-bottom: 140px;
+    }
+
+    .comments h3 {
+        font-size: 1.5rem;
+    }
+
+    .comments img {
+        width: 108px;
+        height: 108px;
+    }
+
+    .comments .text {
+        width: 100%;
+        line-height: 45px;
+    }
+
+    .linkedin i {
+        font-size: 3.8rem;
+    }
+
+    .linkedin p {
+        font-size: 1.5rem;
+        line-height: 22px;
+    }
+
+    .linkedin p span {
+        display: block;
+    }
+
+    .comments::after {
+        display: none;
+    }
+
+    .ultimate-input {
+        display: none;
+    }
+
+    .container-foot {
+        padding: 0 42px 60px;
+        flex-direction: column;
+    }
+
+    .container-exponsore {
+        gap: 24px;
+    }
+
+    footer .logo {
+        padding-left: 43px;
+    }
+
+    .fot-1 {
+        margin: 0;
+        width: 100%;
+    }
+
+    .lenguage {
+        padding: 30px 0 20px 0;
+    }
+
+    .social {
+        gap: 40px;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .social a {
+        width: auto;
+    }
+
+    .social .fab {
+        width: 30px;
+        height: 30px;
+        line-height: 1.6;
+        font-size: 1.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ul-container {
+        flex-direction: column;
+    }
+
+    .container-foot ul {
+        width: 100%;
+    }
+
+    .container-foot ul:nth-child(3) {
+        width: 100%;
+    }
+
+    .container-exponsore a {
+        width: calc(33% - 18px);
+    }
+
+    .conditions {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .terms {
+        padding: 20px 15px;
+    }
+
+    .terms span {
+        width: 50%;
+    }
+
+    .input-foot {
+        gap: 10px;
+        flex-direction: column;
+        padding: 40px 0 52px 0;
+    }
+
+    #input-3 {
+        height: 56px;
+        margin-bottom: 21px;
+        padding: 10px 18px;
+    }
+
+    .input-foot .btn {
+        width: 100%;
+        font-size: 1.3rem;
+        top: initial;
+        bottom: initial;
+        border-radius: 5px;
+        height: 40px;
+        position: relative;
+        height: 56px;
+    }
+
+    .input-foot p {
+        padding: 0;
+    }
+
+    .lenguages {
+        flex-direction: row;
+    }
+
+    .terms {
+        gap: 25px;
+        padding: 24px 30px 40px;
+    }
+
+    .wpp {
+        display: none;
+    }
+}
