@@ -24,8 +24,8 @@
     .conversation-1::after {
         border-right: 10px solid transparent;
         border-top: 10px solid transparent;
-        border-left: 10px solid #e5fad9;
-        border-bottom: 10px solid #e5fad9;
+        border-left: 10px solid #ffe6ca;
+        border-bottom: 10px solid #ffe6ca;
     }
 
     .conversation-2::after {
@@ -107,10 +107,16 @@
         flex-direction: column;
         align-items: flex-start;
         padding: 25px 0;
+        position: fixed;
+        z-index: 10;
+        width: 100%;
+        box-shadow: 0 0 20px 0px #c2c2c2;
     }
 
     .logo-m {
-        padding-left: 25px;
+        padding-left: 15px;
+        width: 120px;
+        height: auto;
     }
 
     .enlaces-menu2 {
@@ -189,8 +195,8 @@
     .conversation-1::after {
         border-right: 15px solid transparent;
         border-top: 15px solid transparent;
-        border-left: 15px solid #e5fad9;
-        border-bottom: 15px solid #e5fad9;
+        border-left: 15px solid #ffe6ca;
+        border-bottom: 15px solid #ffe6ca;
     }
 
     .conversation-2 {
@@ -356,9 +362,6 @@
 
 /* Mobile */
 @media(max-width:576px) {
-    .li-text {
-        display: none;
-    }
 
     .hero {
         padding: 20px;
@@ -417,8 +420,8 @@
     .conversation-1::after {
         border-right: 8px solid transparent;
         border-top: 8px solid transparent;
-        border-left: 8px solid #e5fad9;
-        border-bottom: 8px solid #e5fad9;
+        border-left: 8px solid #ffe6ca;
+        border-bottom: 8px solid #ffe6ca;
     }
 
     .conversation-2::after {
@@ -449,7 +452,7 @@
         height: 23px;
         border-radius: 4px;
         left: 15px;
-        top: 218px;
+        top: 230px;
     }
 
     .typing .dot {
@@ -526,30 +529,23 @@
     .pills-container h2 {
         font-size: 3.0rem;
         line-height: 1;
-        order: 1;
         margin-bottom: 15px;
     }
 
     .container-tabs p {
         font-size: 1.5rem;
         height: auto;
-        line-height: 25px;
         padding: 0;
-        margin: 30px 0 30px 0;
-        order: 3;
     }
 
     .pills-container a {
-        order: 4;
         font-size: 1.7rem;
         text-align: center;
+        max-width: inherit;
     }
 
-    #pills-home img {
-        width: 100%;
-        position: relative;
-        order: 2;
-        right: -28px;
+    .pills-container img {
+        display: none;
     }
 
     #pills-profile img {
@@ -566,7 +562,7 @@
         right: -18px;
     }
 
-    .container-tabs li {
+    .container-tabs li.nav-item {
         margin: 0;
         width: 33%;
     }

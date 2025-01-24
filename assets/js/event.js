@@ -30,56 +30,43 @@ function fadeElement(item, time) {
     }, time);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-//----------------------------------------------------------- Number increment ------------------------------------------------------------//
+// Number increment
 addEventListener('DOMContentLoaded', () => {
-    const contadores = document.querySelectorAll('.contador_cantidad')
-    const velocidad = 1000
+    const contadores = document.querySelectorAll('.contador_cantidad');
 
     const animarContadores = () => {
         for (const contador of contadores) {
             const actualizar_contador = () => {
                 let cantidad_maxima = +contador.dataset.cantidadTotal,
                     valor_actual = +contador.innerText,
-                    incremento = cantidad_maxima / velocidad
-
+                    incremento = +contador.dataset.incremento;
                 if (valor_actual < cantidad_maxima) {
-                    contador.innerText = Math.ceil(valor_actual + incremento)
-                    setTimeout(actualizar_contador, 70)
+                    contador.innerText = Math.ceil(valor_actual + incremento);
+                    setTimeout(actualizar_contador, 10);
                 } else {
-                    contador.innerText = cantidad_maxima
+                    contador.innerText = cantidad_maxima;
                 }
-            }
-            actualizar_contador()
+            };
+            actualizar_contador();
         }
-    }
+    };
 
     const mostrarContadores = elementos => {
         elementos.forEach(elemento => {
             if (elemento.isIntersecting) {
-                animarContadores()
+                animarContadores();
             }
         });
-    }
+    };
 
     const observer = new IntersectionObserver(mostrarContadores, {
         threshold: 0.1
-    })
+    });
 
-    const elemntosHTML = document.querySelectorAll('.cards')
+    const elemntosHTML = document.querySelectorAll('.cards');
     elemntosHTML.forEach(elementosHTML => {
-        observer.observe(elementosHTML)
-    })
-})
+        observer.observe(elementosHTML);
+    });
+});
+
 
