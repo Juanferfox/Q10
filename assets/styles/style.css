@@ -58,6 +58,7 @@ body::-webkit-scrollbar-track {
 nav .nav-desktop {
     display: flex;
     width: 100%;
+    right: 0;
     padding: 10px 0 10px 0;
     background-color: var(--primary-color);
     font-size: 1.4rem;
